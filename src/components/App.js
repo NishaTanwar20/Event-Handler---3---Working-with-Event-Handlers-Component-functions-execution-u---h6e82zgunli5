@@ -2,10 +2,10 @@ import React from 'react'
 import '../styles/App.css';
 import {useState} from 'react';
 const App = () => {
-  const [message , setMessage] = useState('');
+  const [input , setInput] = useState('');
   const handleInput = (event) =>{
    // use console.log
-   setMessage(event.target.value);
+   setInput(event.target.value);
    console.log(event.target.value);
   }
 
