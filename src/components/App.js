@@ -1,11 +1,9 @@
 import React from 'react'
 import '../styles/App.css';
-import {useState} from 'react';
+
 const App = () => {
-  const [input , setInput] = useState('');
   const handleInput = (event) =>{
    // use console.log
-   setInput(event.target.value);
    console.log(event.target.value);
   }
 
