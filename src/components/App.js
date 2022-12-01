@@ -2,11 +2,20 @@ import React from 'react'
 import '../styles/App.css';
 
 const App = () => {
-
-  const handleInput = (event) =>{
-   // use console.log
-   console.log(event.target.value);
-
+    let prevVal = "";
+    let prevNum ="";
+    const handleInput = (event) =>{
+      // console.log(typeof event.target.value)
+    if(event.target.id === 'num-input'){
+        // prevNum;
+        prevNum = prevNum+event.target.value;
+        console.log(prevNum);
+    }
+    if(event.target.id === 'text-input'){
+        // prevVal ="";
+        prevVal = prevVal+event.target.value;
+        console.log(prevVal);
+    }
   }
 
   // do not change id of input elements
