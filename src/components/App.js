@@ -2,19 +2,16 @@ import React from 'react'
 import '../styles/App.css';
 
 const App = () => {
-    let prevVal = "";
-    let prevNum ="";
+    var text = "";
+    var number = "";
     const handleInput = (event) =>{
-      // console.log(typeof event.target.value)
-    if(event.target.id === 'num-input'){
-        // prevNum;
-        prevNum = prevNum+event.target.value;
-        console.log(prevNum);
+    if(event.target.type === "text"){
+       text = text+event.target.value;
+        console.log(event.target.value);
     }
-    if(event.target.id === 'text-input'){
-        // prevVal ="";
-        prevVal = prevVal+event.target.value;
-        console.log(prevVal);
+    if(event.target.id === 'number'){
+        number = number+event.target.value;
+        console.log(num);
     }
   }
 
