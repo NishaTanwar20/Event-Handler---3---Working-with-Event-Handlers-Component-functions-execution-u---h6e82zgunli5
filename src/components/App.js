@@ -12,10 +12,10 @@ const App = () => {
     // Update the appropriate state variable and log the input value
     if (id === 'text-input') {
       setTextInput(value);
-      console.log(`Input in #text-input is ${value}`);
+      console.log(value);
     } else if (id === 'num-input') {
       setNumInput(value);
-      console.log(`Input in #num-input is ${value}`);
+      console.log(value);
     }
   }
 
